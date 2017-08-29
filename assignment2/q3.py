@@ -18,15 +18,8 @@ msg1 = msg + zero
 print ("message prime is: ",msg1)
 msg1 = list(msg1)
 ref = list(ref)
-print count
-for i in range(len(msg1)-3):
-    if msg1[i] == '1':
-        for j in range(len(ref)):
-            
-            msg1[i+j] = str((int(msg1[i+j])+int(ref[j]))%2)
-result = '' .join(msg1[-len(zero):])
-print msg+result
-'''
+reminder = int(msg1,2) % int(ref,2)
+
 if (reminder == 0):
     transmit = msg
 else:
@@ -34,7 +27,7 @@ else:
     print reminder_str
     transmit = str(msg) +str(reminder_str)
 print ("The transmission number is: ",transmit)
-'''
+    
     
     
     
