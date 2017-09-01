@@ -16,9 +16,9 @@ b) The b/w is 10Mbps, but after we finish sending each data packet, we must wait
 c) The link allows infinitely fast transmits, but limits bandwidth such that only 20 packets can be sent per RTT zero transmit time as in (c), but during the first RTT, we can send one packet during the 2nd RTT we can send 2 packets, during the 3rs we can send 4 = 23-1 and so on.<br>
 6. Short snapper: Addressing problem: The following figure depicts an internetwork. The IP and the MAC addresses of the significant interfaces are shown. An FTP connection is set up from S to D (S is the client and D is the server) and a SSH connection is set up from D to S (D is the client and S is the server). Write the formats of the following message entities, showing the port addresses, IP addresses and MAC addresses using the format:
 
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 |Source MAC address|Destination MAC address|Source IP address|Destination IP address|Source port address|Destination port address|
- 
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+
    a. Frame on Token Ring1 – FTP message from S to D. <br>
    b. Frame on FDDI – FTP message from S to D. <br>
    c. Frame on Token Ring 2 – FTP message from S to D. <br>
