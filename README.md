@@ -11,23 +11,23 @@ routers and routing protocols, direct link networks, wireless networks, internet
 3. Short snappers: Bandwidth delay problems.
 4. Suppose two hosts, A and B, are separated by 20,000 kilometers and are connected by a direct link of R = 2 Mbps. Suppose the propagation speed over the link is 2.5*108 meters/sec. Consider sending a file of 800,000 bits from Host A to Host B. Suppose the file is sent continuously as one big message. How long does it take to send the file? Suppose now the file is broken up into 20 packets each with each packet containing 40,000 bits.Suppose the receiver acknowledges each packet and the transmission time of an acknowledgement packet is 100 ms. Finally, assume that the sender cannot send a packet until the preceding one is acknowledged. How long does it take to send the file?
 5. Calculate the total time required to transfer a 1.5 MB file in the following cases, assuming RTT of 80ms, a packet size of 1KB and an initial 2XRTT of “handshaking” before it is sent.
-a) The b/w is 10Mbps, and the data packets can be sent continuously.\<br>
-b) The b/w is 10Mbps, but after we finish sending each data packet, we must wait one RTT before sending the next. \<br>
-c) The link allows infinitely fast transmits, but limits bandwidth such that only 20 packets can be sent per RTT zero transmit time as in (c), but during the first RTT, we can send one packet during the 2nd RTT we can send 2 packets, during the 3rs we can send 4 = 23-1 and so on.\<br>
+a) The b/w is 10Mbps, and the data packets can be sent continuously.<br>
+b) The b/w is 10Mbps, but after we finish sending each data packet, we must wait one RTT before sending the next. <br>
+c) The link allows infinitely fast transmits, but limits bandwidth such that only 20 packets can be sent per RTT zero transmit time as in (c), but during the first RTT, we can send one packet during the 2nd RTT we can send 2 packets, during the 3rs we can send 4 = 23-1 and so on.<br>
 6. Short snapper: Addressing problem: The following figure depicts an internetwork. The IP and the MAC addresses of the significant interfaces are shown. An FTP connection is set up from S to D (S is the client and D is the server) and a SSH connection is set up from D to S (D is the client and S is the server). Write the formats of the following message entities, showing the port addresses, IP addresses and MAC addresses using the format:
 | ------------- | ------------- |------------- |------------- |------------- |------------- |
 | Source MAC address  | Destination MAC address  | Source IP address |  Destination IP address  | Source port address  | Destination port address |
- a. Frame on Token Ring1 – FTP message from S to D. \<br>
- b. Frame on FDDI – FTP message from S to D. \<br>
- #### c. Frame on Token Ring 2 – FTP message from S to D. \<br>
- #### d. Frame on Ethernet – FTP message from S to D. \<br>
- #### e. Frame on Token Ring 1 – FTP message from D to S. \<br>
- #### f. Frame on FDDI – FTP message from D to S. \<br>
- #### g. Frame on Token Ring 2 – FTP message from D to S. \<br>
- #### h. Frame on FDDI – SSH message from S to D. \<br>
- #### i. Frame on Token Ring 2 – SSH message from S to D. \<br>
- #### j. Frame on Ethernet – SSH message from S to D. \<br>
- #### k. Frame on Token Ring 1 – SSH message from D to S. \<br>
- #### l. Frame on FDDI – SSH message from D to S. \<br>
+ a. Frame on Token Ring1 – FTP message from S to D. <br>
+ b. Frame on FDDI – FTP message from S to D. <br>
+ c. Frame on Token Ring 2 – FTP message from S to D. <br>
+ d. Frame on Ethernet – FTP message from S to D. <br>
+ e. Frame on Token Ring 1 – FTP message from D to S. <br>
+ f. Frame on FDDI – FTP message from D to S. <br>
+ g. Frame on Token Ring 2 – FTP message from D to S. <br>
+ h. Frame on FDDI – SSH message from S to D. <br>
+ i. Frame on Token Ring 2 – SSH message from S to D. <br>
+ j. Frame on Ethernet – SSH message from S to D. <br>
+ k. Frame on Token Ring 1 – SSH message from D to S. <br>
+ l. Frame on FDDI – SSH message from D to S. <br>
 
 
