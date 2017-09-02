@@ -32,4 +32,5 @@ c) The link allows infinitely fast transmits, but limits bandwidth such that onl
       k. Frame on Token Ring 1 – SSH message from D to S. <br>
       l. Frame on FDDI – SSH message from D to S. <br>
 
-
+### Assignment 2: 
+1. Experimental study with Wireshark
