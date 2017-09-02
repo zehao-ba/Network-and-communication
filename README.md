@@ -33,4 +33,5 @@ c) The link allows infinitely fast transmits, but limits bandwidth such that onl
       l. Frame on FDDI – SSH message from D to S. <br>
 
 ### Assignment 2: 
-1. Experimental study with Wireshark
+1. Experimental study with Wireshark;
+
