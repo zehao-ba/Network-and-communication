@@ -19,25 +19,26 @@ c) The link allows infinitely fast transmits, but limits bandwidth such that onl
 |Source MAC address|Destination MAC address|Source IP address|Destination IP address|Source port address|Destination port address|
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 
-      a. Frame on Token Ring1 – FTP message from S to D. <br>
-      b. Frame on FDDI – FTP message from S to D. <br>
-      c. Frame on Token Ring 2 – FTP message from S to D. <br>
-      d. Frame on Ethernet – FTP message from S to D. <br>
-      e. Frame on Token Ring 1 – FTP message from D to S. <br>
-      f. Frame on FDDI – FTP message from D to S. <br>
-      g. Frame on Token Ring 2 – FTP message from D to S. <br>
-      h. Frame on FDDI – SSH message from S to D. <br>
-      i. Frame on Token Ring 2 – SSH message from S to D. <br>
-      j. Frame on Ethernet – SSH message from S to D. <br>
-      k. Frame on Token Ring 1 – SSH message from D to S. <br>
-      l. Frame on FDDI – SSH message from D to S. <br>
+      a. Frame on Token Ring1 – FTP message from S to D.
+      b. Frame on FDDI – FTP message from S to D. 
+      c. Frame on Token Ring 2 – FTP message from S to D. 
+      d. Frame on Ethernet – FTP message from S to D. 
+      e. Frame on Token Ring 1 – FTP message from D to S. 
+      f. Frame on FDDI – FTP message from D to S. 
+      g. Frame on Token Ring 2 – FTP message from D to S. 
+      h. Frame on FDDI – SSH message from S to D. 
+      i. Frame on Token Ring 2 – SSH message from S to D. 
+      j. Frame on Ethernet – SSH message from S to D. 
+      k. Frame on Token Ring 1 – SSH message from D to S. 
+      l. Frame on FDDI – SSH message from D to S. 
 
 ### Assignment 2: 
 1. Experimental study with Wireshark;
 
 ### Assignment 3:
 1. Write a simple program to simulate the bridge processing flowchart discussed in the lectures. The program should read a text file that contains the forwarding database (FDB). The first line in the text file contains the number of ports on the bridge. The program should then read another text file containing randomly generate frames – just the source and destination numbers and port numbers of arrival. For each frame, the program should use the flowchart to make an update of the forwarding database and/or to forward/discard the frame. Ignore the CRC error detection part (that is, assume that the frames are error free). Include the source code and sample runs of the program.<br>
-As a simple example, the text file containing the FDB and port numbers could look like this:<br>
+As a simple example, the text file containing the FDB and port numbers could look like this:
+
 |4|x|
 | ------------- | ------------- | 
 |A|1|
@@ -47,16 +48,20 @@ As a simple example, the text file containing the FDB and port numbers could loo
 |E|3|
 |F|3|
 |X|3|
+
 In the above example, the bridge has four ports (1, 2, 3 and 4) and the current FDB has 7 entries. (Port no.4 has not yet received any frame and hence there is no entry for port no. 4).<br>
-The second text file could be like this:<br>
+The second text file could be like this:
+
 |A|B|1|
 | ------------- | ------------- | ------------- | 
 |X|B|3|
 |A|M|1|
 |X|M|4|
 |Etc.| | |
+
 The first line means that the frame has source address A and destination address B and arrives at port 1 of the bridge. In this case, the frame should be discarded by the bridge. <br>
-The output would look something like this:<br>
+The output would look something like this:
+
 |A|B|1|Frame discarded|
 | ------------- | ------------- | ------------- | ------------- | 
 |X|B|3|Frame sent on port 1|
