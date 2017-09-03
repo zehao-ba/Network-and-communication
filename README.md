@@ -35,3 +35,32 @@ c) The link allows infinitely fast transmits, but limits bandwidth such that onl
 ### Assignment 2: 
 1. Experimental study with Wireshark;
 
+### Assignment 3:
+1. Write a simple program to simulate the bridge processing flowchart discussed in the lectures. The program should read a text file that contains the forwarding database (FDB). The first line in the text file contains the number of ports on the bridge. The program should then read another text file containing randomly generate frames – just the source and destination numbers and port numbers of arrival. For each frame, the program should use the flowchart to make an update of the forwarding database and/or to forward/discard the frame. Ignore the CRC error detection part (that is, assume that the frames are error free). Include the source code and sample runs of the program.<br>
+As a simple example, the text file containing the FDB and port numbers could look like this:<br>
+|4| |
+| ------------- | ------------- | 
+|A|1|
+|B|1|
+|C|1|
+|D|2|
+|E|3|
+|F|3|
+|X|3|
+In the above example, the bridge has four ports (1, 2, 3 and 4) and the current FDB has 7 entries. (Port no.4 has not yet received any frame and hence there is no entry for port no. 4).<br>
+The second text file could be like this:<br>
+|A|B|1|
+| ------------- | ------------- | ------------- | 
+|X|B|3|
+|A|M|1|
+|X|M|4|
+|Etc.| | |
+The first line means that the frame has source address A and destination address B and arrives at port 1 of the bridge. In this case, the frame should be discarded by the bridge. <br>
+The output would look something like this:<br>
+|A|B|1|Frame discarded|
+| ------------- | ------------- | ------------- | ------------- | 
+|X|B|3|Frame sent on port 1|
+|A|M|1|Frame broadcast on all out ports|
+|X|M|4|FDB updated; Frame sent on port 3|
+|Etc.| | | |
+
