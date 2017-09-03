@@ -39,7 +39,7 @@ c) The link allows infinitely fast transmits, but limits bandwidth such that onl
 1. Write a simple program to simulate the bridge processing flowchart discussed in the lectures. The program should read a text file that contains the forwarding database (FDB). The first line in the text file contains the number of ports on the bridge. The program should then read another text file containing randomly generate frames – just the source and destination numbers and port numbers of arrival. For each frame, the program should use the flowchart to make an update of the forwarding database and/or to forward/discard the frame. Ignore the CRC error detection part (that is, assume that the frames are error free). Include the source code and sample runs of the program.<br>
 As a simple example, the text file containing the FDB and port numbers could look like this:
 
-|4|x|
+|4| |
 | ------------- | ------------- | 
 |A|1|
 |B|1|
